@@ -154,15 +154,18 @@ public class InspectionActivity extends AppCompatActivity {
             month = editmonth.getText().toString();
 
         else month = editmonth.getText().toString();
-        new ParseTask().execute();
-        progressBarOne.setVisibility(View.VISIBLE);
         //  text_text.setText("Пожалуйста, проверьте Ваше интернет-соединение");
         na = editfio.getText().toString();
         if (!isValidName(na)) {
             editfio.setError("Заполните поле");
             bool = false;
         }
-
+        if (day.equals("")){
+            textView.setText("Введите дату рождения!");
+        }else {
+            new ParseTask().execute();
+            progressBarOne.setVisibility(View.VISIBLE);
+        }
         ifConnect();
 
     }
@@ -236,8 +239,8 @@ public class InspectionActivity extends AppCompatActivity {
         protected String doInBackground(Void... params) {
 
             try {
-
-                URL url = new URL("http://176.126.167.249/blacklist/?fio=" + fio + "&day=" + day + "&month=" + month + "&year=" + year + "&format=json");
+//                URL url = new URL("http://176.126.167.249/blacklist/?fio=" + fio + "&day=" + day + "&month=" + month + "&year=" + year + "&format=json");
+                URL url = new URL("http://147.135.249.234:85/blacklist/?fio="+ fio+"&d="+day+"&m="+month+"&y="+year);
                 Log.e("DAY", day + " " + month + "" + year + "");
                 Log.e("DAY", day);
                 Log.e("MON", month + "");
@@ -275,30 +278,45 @@ public class InspectionActivity extends AppCompatActivity {
             try {
                 dataJsonObject = new JSONObject(json);
 
+                JSONObject menus = dataJsonObject.getJSONObject("data");
 
-                progressBarOne.setVisibility(View.GONE);
-                String s = dataJsonObject.getString("result");
-                String a = "[]";
-                if (s.equals(a)) {
+
+                String name = menus.getString("fio");
+                Log.e("LOG", name);
+                String nakaz = menus.getString("nakaz");
+                if (name.equals("null")){
+                    textView.setText("Указанная фамилия в «Чёрном списке» не найдена!");
+                }else if (name.equals("рмационно-консультационный ц")){
                     textView.setText("Введите Фамилию в форму поиска для проверки наличия в «Чёрном списке»:");
-                } else {
-                    textView.setText(dataJsonObject.getString("result"));
-                }
-                Log.e("TAG", dataJsonObject.getString("result"));
-                //  text_text.setText(R.string.tv_text);
-//                text_text.setVisibility(View.VISIBLE);
-//                text_text.setText(dataJsonObject.getString("name"));
-                //  dataJsonObject = new JSONObject(json);
-                JSONArray menus = dataJsonObject.getJSONArray("result");
+                }else
+                textView.setText(name + "\n\n" + nakaz);
+                progressBarOne.setVisibility(View.GONE);
+                // JSONObject meta=dataJsonObject.getJSONObject("meta");
+                // total_count=meta.getInt("total_count");
 
-                for (int i = 0; i < menus.length(); i++) {
-                    JSONObject menu = menus.getJSONObject(i);
-                    String name = menu.getString("name");
-                    Log.e("LOG", name);
-                    String nakaz = menu.getString("nakaz");
-                    textView.setText(name + "\n\n" + nakaz);
-                    //   text_text.setText(menu.getString("name"));
-                }
+//                progressBarOne.setVisibility(View.GONE);
+//                String s = dataJsonObject.getString("result");
+//                String a = "[]";
+//                if (s.equals(a)) {
+//                    textView.setText("Введите Фамилию в форму поиска для проверки наличия в «Чёрном списке»:");
+//                } else {
+//                    textView.setText(dataJsonObject.getString("result"));
+//                }
+//                Log.e("TAG", dataJsonObject.getString("result"));
+//                //  text_text.setText(R.string.tv_text);
+////                text_text.setVisibility(View.VISIBLE);
+////                text_text.setText(dataJsonObject.getString("name"));
+//                //  dataJsonObject = new JSONObject(json);
+//                JSONArray menus = dataJsonObject.getJSONArray("result");
+//
+//                for (int i = 0; i < menus.length(); i++) {
+//                    JSONObject menu = menus.getJSONObject(i);
+//                    String name = menu.getString("name");
+//                    Log.e("LOG", name);
+//                    String nakaz = menu.getString("nakaz");
+//                    textView.setText(name + "\n\n" + nakaz);
+//                    //   text_text.setText(menu.getString("name"));
+//                }
 
 
             } catch (JSONException e) {

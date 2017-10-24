@@ -2,12 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        config {
-            keyAlias 'Migrate'
-            keyPassword 'migrate2016'
-            storeFile file('D:/Projects/migration01.12.16/my_key_store.jks')
+       config {
+           keyAlias 'Migrate'
+           keyPassword 'migrate2016'
+           storeFile file('D:/Projects/migration01.12.16/my_key_store.jks')
+  ///  storeFile file('D:/android/AndroidStudioProject/migration01.12.16/migration01.12.16/my_key_store.jks')
             storePassword 'migrate2016'
-        }
+       }
     }
     compileSdkVersion 23
     buildToolsVersion '25.0.0'
@@ -15,8 +16,8 @@ android {
         applicationId "com.migrate.admin.pagination"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 10
-        versionName "2.0"
+        versionCode 15
+        versionName "2.5"
         signingConfig signingConfigs.config
     }
     buildTypes {
@@ -37,6 +38,10 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'org.jsoup:jsoup:1.7.2'
     compile 'com.squareup.picasso:picasso:2.3.2'
+
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:recyclerview-v7:23.3.0'
     compile 'com.android.support:cardview-v7:23.3.0'

@@ -116,10 +116,12 @@ public class EmbassySecondActivity extends AppCompatActivity {
         tvFax.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("",fax );
-                clipboard.setPrimaryClip(clip);
-                Toast.makeText(EmbassySecondActivity.this, R.string.toast_copy_to_buffer,Toast.LENGTH_SHORT).show();
+//                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+//                ClipData clip = ClipData.newPlainText("",fax );
+//                clipboard.setPrimaryClip(clip);
+//                Toast.makeText(EmbassySecondActivity.this, R.string.toast_copy_to_buffer,Toast.LENGTH_SHORT).show();
+
+                startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel",fax , null)));
             }
         });
 
@@ -171,24 +173,24 @@ public class EmbassySecondActivity extends AppCompatActivity {
         // use a linear layout manager
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-            Cursor cursor = dataHelper.getDataConsulate(id);
-            if ( cursor.getCount() > 0) {
-                while (cursor.moveToNext()) {
-                    Consulate istories=new Consulate();
-                    istories.setAddress(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_ADDRESS_COLUMN)));
-                    istories.setRegion(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_REGION_COLUMN)));
-                    istories.setPhoneNumber(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_PHONE_COLUMN)));
-                    istories.setKarta(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_KARTA_COLUMN)));
+        Cursor cursor = dataHelper.getDataConsulate(id);
+        if ( cursor.getCount() > 0) {
+            while (cursor.moveToNext()) {
+                Consulate istories=new Consulate();
+                istories.setAddress(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_ADDRESS_COLUMN)));
+                istories.setRegion(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_REGION_COLUMN)));
+                istories.setPhoneNumber(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_PHONE_COLUMN)));
+                istories.setKarta(cursor.getString(cursor.getColumnIndex(DataHelper.CONSULATE_KARTA_COLUMN)));
 
-                    studentList.add(istories);
-                }
-                mAdapter=new RVEmbassySecondAdapter(studentList,mRecyclerView,this);
-                mRecyclerView.setAdapter(mAdapter);
-
-
-            } else {mRecyclerView.setVisibility(View.GONE);
-                    consulate.setVisibility(View.GONE);
+                studentList.add(istories);
             }
+            mAdapter=new RVEmbassySecondAdapter(studentList,mRecyclerView,this);
+            mRecyclerView.setAdapter(mAdapter);
+
+
+        } else {mRecyclerView.setVisibility(View.GONE);
+            consulate.setVisibility(View.GONE);
+        }
 
 
 

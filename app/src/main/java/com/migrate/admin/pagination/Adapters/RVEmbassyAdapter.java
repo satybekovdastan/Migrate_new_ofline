@@ -100,8 +100,8 @@ public class RVEmbassyAdapter extends RecyclerView.Adapter {
             ((StudentViewHolder) holder).tvName.setText("");
 
             ((StudentViewHolder) holder).tvName.setText(singleStudent.getCountry());
-            Picasso.with(context).load("http://176.126.167.249/"+singleStudent.getImage()).into( ((StudentViewHolder) holder).imageView);
-
+            //Picasso.with(context).load("http://176.126.167.249/"+singleStudent.getImage()).into( ((StudentViewHolder) holder).imageView);
+            Picasso.with(context).load(Integer.parseInt(singleStudent.getImage())).into( ((StudentViewHolder) holder).imageView);
             ((StudentViewHolder) holder).student= singleStudent;
 
         } else {

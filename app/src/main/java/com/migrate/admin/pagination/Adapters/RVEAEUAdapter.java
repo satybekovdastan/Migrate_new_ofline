@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.migrate.admin.pagination.Activities.MainActivity;
 import com.migrate.admin.pagination.Activities.SecondActivities.NKOSecondActivity;
 import com.migrate.admin.pagination.Activities.RulesOfIncomingActivity;
 import com.migrate.admin.pagination.Activities.SecondActivities.DiasporySecondActivity;
@@ -24,6 +25,8 @@ import com.migrate.admin.pagination.Serializables.EAEU;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+import static com.migrate.admin.pagination.R.string.error;
 
 public class RVEAEUAdapter extends RecyclerView.Adapter {
     private final int VIEW_ITEM = 1;
@@ -104,7 +107,11 @@ public class RVEAEUAdapter extends RecyclerView.Adapter {
             EAEU singleStudent= (EAEU) studentList.get(position);
 
             ((StudentViewHolder) holder).tvName.setText(singleStudent.getName());
-            Picasso.with(context).load("http://176.126.167.249"+singleStudent.getPicture()).into(((StudentViewHolder) holder).imageView);
+            if(singleStudent.getPicture() == null) {
+                Picasso.with(context).load("http://176.126.167.249"+singleStudent.getPicture()).into(((StudentViewHolder) holder).imageView);
+            }else {
+                Picasso.with(context).load(Integer.parseInt(singleStudent.getPicture())).into(((StudentViewHolder) holder).imageView);
+            }
             if(isAbroad==6) ((StudentViewHolder) holder).imageView.setVisibility(View.GONE);
             ((StudentViewHolder) holder).student= singleStudent;
             ((StudentViewHolder) holder).isAbroad2=isAbroad;

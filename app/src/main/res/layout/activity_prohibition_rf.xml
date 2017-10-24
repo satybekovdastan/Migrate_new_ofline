@@ -47,7 +47,9 @@
         android:text="@string/tv_blacklistin_rf"
         android:background="@drawable/button_orange"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
     <android.support.v7.widget.RecyclerView
 
         android:id="@+id/rv_rules_of_incoming"

@@ -44,7 +44,6 @@ import java.util.List;
 public class NewsActivity extends AppCompatActivity {
 
     DataHelper dataHelper;
-    String title="";
     String TAG="TAG";
     private Toolbar toolbar;
     String dateDB,date;
@@ -55,6 +54,7 @@ public class NewsActivity extends AppCompatActivity {
     private List<Istories> studentList;
     ProgressBar progressBar;
     protected Handler handler;
+    String title="";
     private MaterialSearchView searchView;
     int lang;
     URL urlM;
@@ -82,13 +82,13 @@ public class NewsActivity extends AppCompatActivity {
         else lang=0;
         if (lang==0) {
             try {
-                urlM=new URL("http://176.126.167.249/api/v1/news/?format=json&limit=0");
+                urlM=new URL("http://147.135.249.234:85/api/v1/newsru/?format=json");
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
         }else {
             try {
-                urlM=new URL("http://176.126.167.249/api/v1/news_kg/?format=json&limit=0");
+                urlM=new URL("http://147.135.249.234:85/api/v1/newskg/?format=json");
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
@@ -110,8 +110,9 @@ public class NewsActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(llm);
         mRecyclerView.setHasFixedSize(true);
 //
-//ifConnect();
-pizdec();
+        ifConnect();
+//        new ParseTask().execute();
+        pizdec();
 
 
 
@@ -191,8 +192,6 @@ pizdec();
             }
             else {
                 Toast.makeText(this,R.string.toast_no_internet,Toast.LENGTH_SHORT).show();
-
-
             }
 
         }
@@ -314,16 +313,17 @@ pizdec();
             try {
                 dataJsonObject = new JSONObject(json);
                 JSONArray menus = dataJsonObject.getJSONArray("objects");
-                JSONObject meta=dataJsonObject.getJSONObject("meta");
-                total_count=meta.getInt("total_count");
+               // JSONObject meta=dataJsonObject.getJSONObject("meta");
+               // total_count=meta.getInt("total_count");
 
 
                 for (int i = 0; i < menus.length(); i++) {
                     JSONObject menu = menus.getJSONObject(i);
                     Istories student = new Istories();
                     student.setImage(menu.getString("image"));
-                    student.setText(menu.getString("text_ru"));
-                    student.setNickName(menu.getString("title_ru"));
+                    student.setText(menu.getString("content"));
+                    Log.e("CONTENT", menu.getString("content"));
+                    student.setNickName(menu.getString("name"));
 
                     if (i==0){dataHelper.delete();
                     }

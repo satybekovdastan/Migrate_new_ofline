@@ -42,6 +42,17 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:text="@string/async_string_progress"
+        android:textSize="22sp"
+        android:id="@+id/textprogress"
+        android:gravity="center"
+
+        android:fontFamily="sans-serif-light"
+        android:layout_height="wrap_content" />
+
     <ImageView
         android:layout_width="match_parent"
         android:id="@+id/imagesss"
@@ -57,4 +68,32 @@
         android:layout_centerVertical="true"
         wheel:matProg_barColor="#2196f3"
         wheel:matProg_progressIndeterminate="true" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+    <ProgressBar
+        android:id="@+id/pb_horizontal"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_weight="5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv"
+            android:layout_width="40dp"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:text="100 %"
+            />
+</LinearLayout>
 </RelativeLayout>

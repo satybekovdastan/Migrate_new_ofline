@@ -55,7 +55,7 @@ public class HTSecondActivity extends AppCompatActivity {
         st.deleteCharAt(st.length()-1);
         st.deleteCharAt(0);
         s=ss+st.toString();
-        String s1=s.replaceAll("src=\"","src=\"http://176.126.167.249/");
+        String s1=s.replaceAll("src=\"","src=\"http://147.135.249.234:85/");
         Log.e("TAG_KKxxKK",s1);
 
         Mig2 mig2;

@@ -16,6 +16,8 @@ import com.migrate.admin.pagination.Serializables.Mig2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class RulesOfMigrationActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
@@ -55,11 +57,17 @@ public class RulesOfMigrationActivity extends AppCompatActivity {
         st.deleteCharAt(st.length()-1);
         st.deleteCharAt(0);
         s=ss+st.toString();
-        String s1=s.replaceAll("src=\"","src=\"http://176.126.167.249/");
-        Log.e("TAG_KKxxKK",s1);
-
+        //String s1=s.replaceAll("src=\"","src=\"http://176.126.167.249/");
+        //Log.e("TAG_KKxxKK",s1);
+      //  String pattern = "src=.*%3E/";
+      //  Pattern p = Pattern.compile(pattern);
+      //  Matcher m = p.matcher(s);
+       // String s1 = m.replaceAll("src=file:///android_res/raw/");
+              //  %3Cfunction%20image_upload_to%20at%200x2b44f1c647d0%3E
+               // %3Cfunction%20image_upload_to%20at%200x2b3b91c63488%3E
+                //%3Cfunction%20image_upload_to%20at%200x2b44f1c647d0%3E
         Mig2 mig2;
-        webView.loadDataWithBaseURL(null,s1,"text/html", "ru-RU",null);
+        webView.loadDataWithBaseURL(null,s,"text/html", "ru-RU",null);
         Log.e("TAG_WE",webView+"");
     }
     @Override

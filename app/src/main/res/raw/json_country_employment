@@ -1,0 +1,68 @@
+// 20170316200430
+// http://176.126.167.249/api/v1/country_employment/?limit=0&format=json
+
+{
+  "meta": {
+    "limit": 1000,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total_count": 9
+  },
+  "objects": [
+    {
+      "country": "Государство Катар",
+      "id": 5,
+      "image": "/media/images/katar.png",
+      "resource_uri": "/api/v1/country_employment/5/"
+    },
+    {
+      "country": "Государство Кувейт",
+      "id": 6,
+      "image": "/media/images/kuwait.png",
+      "resource_uri": "/api/v1/country_employment/6/"
+    },
+    {
+      "country": "Иорданское Хашимитское Королевство",
+      "id": 8,
+      "image": "/media/images/Jordan.png",
+      "resource_uri": "/api/v1/country_employment/8/"
+    },
+    {
+      "country": "Королевство Бахрейн",
+      "id": 7,
+      "image": "/media/images/Bahrain.png",
+      "resource_uri": "/api/v1/country_employment/7/"
+    },
+    {
+      "country": "Объединенные Арабские Эмираты",
+      "id": 14,
+      "image": "/media/images/United-Arab-Emirates.png",
+      "resource_uri": "/api/v1/country_employment/14/"
+    },
+    {
+      "country": "Российская Федерация",
+      "id": 9,
+      "image": "/media/images/Russia.png",
+      "resource_uri": "/api/v1/country_employment/9/"
+    },
+    {
+      "country": "Турецкая Республика",
+      "id": 4,
+      "image": "/media/images/turkey_YuZL9rY.png",
+      "resource_uri": "/api/v1/country_employment/4/"
+    },
+    {
+      "country": "Федеративная Республика Германия",
+      "id": 12,
+      "image": "/media/images/Germany.ico",
+      "resource_uri": "/api/v1/country_employment/12/"
+    },
+    {
+      "country": "Япония",
+      "id": 11,
+      "image": "/media/images/japan_ucuf2KF.png",
+      "resource_uri": "/api/v1/country_employment/11/"
+    }
+  ]
+}

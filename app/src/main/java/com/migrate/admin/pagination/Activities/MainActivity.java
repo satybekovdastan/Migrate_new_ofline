@@ -2,9 +2,13 @@ package com.migrate.admin.pagination.Activities;
 
 import android.accounts.Account;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
@@ -41,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     private Menu menu;
     AlertDialog.Builder ad;
     Account mAccount;
-
     public RVProhibitionAdapter mAdapter;
     public RVNewsAdapter newsAdapter;
 
@@ -106,15 +109,11 @@ public class MainActivity extends AppCompatActivity {
                 Cursor cursor=dataHelper.getDataLanguage();
                 if (cursor.getCount()>0)
                 {
-
                     cursor.moveToFirst();
                     lang=cursor.getInt(cursor.getColumnIndex(DataHelper.LANGUAGE_COLUMN));
-
                 }
                 else {lang=0;
-
                 }
-
                 lang=(lang+1)%2;
                 dataHelper.deleteLanguage();
                 dataHelper.insertLanguage(lang);
@@ -122,12 +121,9 @@ public class MainActivity extends AppCompatActivity {
                     setLocale("ru");}
                 else{   item.setTitle("ru");
                     setLocale("ky");}
-
-
-
-
                 Intent intent=new Intent(MainActivity.this,SyncActivity.class);
                 intent.putExtra("kk",1);
+                //intent.putExtra("kk",0);
                 startActivity(intent);
 
                 finish();
@@ -224,30 +220,20 @@ public class MainActivity extends AppCompatActivity {
             lang=cursor.getInt(cursor.getColumnIndex(DataHelper.LANGUAGE_COLUMN));
         }
         else lang=0;
-
-
-
-
-
         if (lang==0){
             item.setTitle("kg");
             setLocale("ru");
         }
-
         else{
             setLocale("ky");
             item.setTitle("ru");
         }
-
-
         return true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // получим идентификатор выбранного пункта меню
         int id = item.getItemId();
-
-
         // Операции для выбранного пункта меню
         switch (id) {
 
@@ -256,10 +242,24 @@ public class MainActivity extends AppCompatActivity {
 
                // return true;
             case R.id.menu_item_language:
+
+
+             // ifConnect();
                 ad.show();
 
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void ifConnect(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED){
+            ad.show();
+        }
+        else {
+            Toast.makeText(this,R.string.no_internet,Toast.LENGTH_SHORT).show();
         }
     }
 

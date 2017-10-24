@@ -102,7 +102,7 @@ public class RVNewsAdapter extends RecyclerView.Adapter {
 
 
             ((StudentViewHolder) holder).student= singleStudent;
-            Picasso.with(context).load("http://176.126.167.249/"+singleStudent.getImage()).error(R.drawable.news_2x).placeholder(R.drawable.news_2x).into(((StudentViewHolder) holder).imageView);
+            Picasso.with(context).load("http://147.135.249.234:85/"+singleStudent.getImage()).error(R.drawable.news_2x).placeholder(R.drawable.news_2x).into(((StudentViewHolder) holder).imageView);
 
         } else {
             ((ProgressViewHolder) holder).progressBar.setIndeterminate(true);

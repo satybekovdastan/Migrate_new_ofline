@@ -6,7 +6,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_item_language">kg</string>
     <string name="call_button_text">Позвонить сейчас</string>
-    <string name="bt_news">Новости</string>
+    <string name="bt_news">Важно знать</string>
     <string name="bt_eaeu">Правила пребывания в ЕАЭС</string>
     <string name="bt_hot_line">Горячие линии</string>
     <string name="bt_embassy">Посольства и консульства KP</string>
@@ -93,4 +93,5 @@
     <string name="no_internet">Пожалуйста, проверьте Ваше интернет-соединение</string>
     <string name="cylka_na_rf">Обратиться в Веб приемную Пограничной службы ФСБ РФ</string>
     <string name="familya">Введите только Фамилию</string>
+    <string name="async_string_progress">Подождите немного! Идет первоначальная загрузка файлов, после загрузки дальнейшее подключение к интернету не потребуется кроме раздела «Проверка запрета на Въезд в РФ»</string>
 </resources>

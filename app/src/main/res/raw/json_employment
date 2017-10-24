@@ -1,0 +1,926 @@
+// 20170316201523
+// http://176.126.167.249/api/v1/employment/?limit=0&format=json
+
+{
+  "meta": {
+    "limit": 1000,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total_count": 48
+  },
+  "objects": [
+    {
+      "address": "ул. Айни 31",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-10T13:58:52.805017",
+      "id": 8,
+      "manager": "Адилбекова Махабат",
+      "map_link": "",
+      "name": "ОсОО «АвеМлис»",
+      "phone_number": "0771488883",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/8/",
+      "updated_at": "2016-11-10T13:58:52.805077"
+    },
+    {
+      "address": "ул. Токтогула, 87А, каб. 46",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-10T13:58:52.805618",
+      "id": 9,
+      "manager": "Жармухамедова Аэлита",
+      "map_link": "",
+      "name": "ОсОО «KG.VIP travel»",
+      "phone_number": "0771203004",
+      "phone_number_1": "0554900098",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/9/",
+      "updated_at": "2016-11-10T13:58:52.805650"
+    },
+    {
+      "address": "бульвар Эркиндик, 45",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-10T13:58:52.806074",
+      "id": 10,
+      "manager": "Бекбулатова Аида",
+      "map_link": "",
+      "name": "ОсОО «Фестлайн»",
+      "phone_number": "0556260021",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/10/",
+      "updated_at": "2016-11-10T13:58:52.806105"
+    },
+    {
+      "address": "ул. Киевская",
+      "country": {
+        "country": "Государство Катар",
+        "id": 5,
+        "image": "/media/images/katar.png",
+        "resource_uri": "/api/v1/country_employment/5/"
+      },
+      "created_at": "2016-11-10T14:06:56.236438",
+      "id": 11,
+      "manager": "Камчыбекова Гулнара Советбековна",
+      "map_link": "",
+      "name": "ОсОО «Виза Директ»",
+      "phone_number": "0700448726",
+      "phone_number_1": "0550448726",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/11/",
+      "updated_at": "2016-11-18T18:59:25.065022"
+    },
+    {
+      "address": "ул.Турусбекова, 88/1, каб. 308",
+      "country": {
+        "country": "Государство Катар",
+        "id": 5,
+        "image": "/media/images/katar.png",
+        "resource_uri": "/api/v1/country_employment/5/"
+      },
+      "created_at": "2016-11-22T15:03:45.014334",
+      "id": 12,
+      "manager": "Мырзабекова Гульнара Кенешбековна",
+      "map_link": "",
+      "name": "ОсОО «Arabian Center Employment Services»",
+      "phone_number": "0551751182",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/12/",
+      "updated_at": "2016-11-22T15:03:45.014388"
+    },
+    {
+      "address": "ул.Турусбекова, 88/1, каб. 308",
+      "country": {
+        "country": "Государство Кувейт",
+        "id": 6,
+        "image": "/media/images/kuwait.png",
+        "resource_uri": "/api/v1/country_employment/6/"
+      },
+      "created_at": "2016-11-22T15:07:33.165417",
+      "id": 13,
+      "manager": "Мырзабекова Гульнара Кенешбековна",
+      "map_link": "",
+      "name": "ОсОО «Arabian Center Employment Services»",
+      "phone_number": "0551751182",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/13/",
+      "updated_at": "2016-11-22T15:07:33.165478"
+    },
+    {
+      "address": "ул.Турусбекова, 88/1, каб. 308",
+      "country": {
+        "country": "Королевство Бахрейн",
+        "id": 7,
+        "image": "/media/images/Bahrain.png",
+        "resource_uri": "/api/v1/country_employment/7/"
+      },
+      "created_at": "2016-11-22T15:09:13.225122",
+      "id": 14,
+      "manager": "Мырзабекова Гульнара Кенешбековна",
+      "map_link": "",
+      "name": "ОсОО «Arabian Center Employment Services»",
+      "phone_number": "0551751182",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/14/",
+      "updated_at": "2016-11-22T15:09:13.225189"
+    },
+    {
+      "address": "ул.Турусбекова, 88/1, каб. 308",
+      "country": {
+        "country": "Иорданское Хашимитское Королевство",
+        "id": 8,
+        "image": "/media/images/Jordan.png",
+        "resource_uri": "/api/v1/country_employment/8/"
+      },
+      "created_at": "2016-11-22T15:11:19.592852",
+      "id": 15,
+      "manager": "Мырзабекова Гульнара Кенешбековна",
+      "map_link": "",
+      "name": "ОсОО «Arabian Center Employment Services»",
+      "phone_number": "0551751182",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/15/",
+      "updated_at": "2016-11-22T15:11:19.592914"
+    },
+    {
+      "address": "ул. Турусбекова, 88/1, 308 каб.",
+      "country": {
+        "country": "Королевство Бахрейн",
+        "id": 7,
+        "image": "/media/images/Bahrain.png",
+        "resource_uri": "/api/v1/country_employment/7/"
+      },
+      "created_at": "2016-11-22T15:16:08.612415",
+      "id": 16,
+      "manager": "Кызалаков Ильяс Женишевич",
+      "map_link": "",
+      "name": "ОсОО «Агентство по трудоустройству в Центральной Азии",
+      "phone_number": "0770751188",
+      "phone_number_1": "612031",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/16/",
+      "updated_at": "2016-11-22T15:16:08.612469"
+    },
+    {
+      "address": "ул. Абдрахманова, 136",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:18:16.176591",
+      "id": 17,
+      "manager": "Чингилбаева Асел Асангуловна",
+      "map_link": "",
+      "name": "ОсОО «Рамай Саякат»",
+      "phone_number": "0700444195",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/17/",
+      "updated_at": "2016-11-22T15:18:16.176671"
+    },
+    {
+      "address": "ул. Токтогула 87, 2- этаж, 5-кабинет",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:20:31.292520",
+      "id": 18,
+      "manager": "Чингилбаева Асел Асангуловна",
+      "map_link": "",
+      "name": "ОсОО «Саякат Ко»",
+      "phone_number": "0700 992466",
+      "phone_number_1": "0550 992466",
+      "phone_number_2": "0776 992466",
+      "resource_uri": "/api/v1/employment/18/",
+      "updated_at": "2016-11-22T15:20:31.292587"
+    },
+    {
+      "address": "пр. Мира, 29",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:20:31.293242",
+      "id": 19,
+      "manager": "Абдуллаев Кубат Токтогулович",
+      "map_link": "",
+      "name": "ОсОО «Goodtime»",
+      "phone_number": "0778700430",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/19/",
+      "updated_at": "2016-11-22T15:20:31.293275"
+    },
+    {
+      "address": "Бишкек, ул. Керимбекова,д.52,кв.2",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:20:31.293670",
+      "id": 20,
+      "manager": "Адиева Рахима Нурдиновна",
+      "map_link": "",
+      "name": "ОсОО «Хосрек Хьюмен Ресоурсес»",
+      "phone_number": "0700 447011",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/20/",
+      "updated_at": "2016-11-22T15:20:31.293707"
+    },
+    {
+      "address": "Ош, ул.Курманжан Датка",
+      "country": {
+        "country": "Российская Федерация",
+        "id": 9,
+        "image": "/media/images/Russia.png",
+        "resource_uri": "/api/v1/country_employment/9/"
+      },
+      "created_at": "2016-11-22T15:22:59.562983",
+      "id": 22,
+      "manager": "Маткалыков Нурлан Нооманович",
+      "map_link": "",
+      "name": "ОсОО «Восточная Аутсорсинговая Компания",
+      "phone_number": "0552330052",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/22/",
+      "updated_at": "2016-11-22T15:22:59.563034"
+    },
+    {
+      "address": "ул.Шопокова,89",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:24:57.494368",
+      "id": 23,
+      "manager": "Матянью Галия Ильясовна",
+      "map_link": "",
+      "name": "ОсОО «Глобус Консалтинг»",
+      "phone_number": "0555713366",
+      "phone_number_1": "0552585999",
+      "phone_number_2": "0312 880018",
+      "resource_uri": "/api/v1/employment/23/",
+      "updated_at": "2016-11-22T15:24:57.494421"
+    },
+    {
+      "address": "ул.Сухомлинова,19-63",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:24:57.494985",
+      "id": 24,
+      "manager": "Гулжигитов Курсант Гулжигитович",
+      "map_link": "",
+      "name": "ОсОО «АБА ТУР ГРУПП»",
+      "phone_number": "0550557171",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/24/",
+      "updated_at": "2016-11-22T15:24:57.495017"
+    },
+    {
+      "address": "ул. Токтогула, 57-24",
+      "country": {
+        "country": "Российская Федерация",
+        "id": 9,
+        "image": "/media/images/Russia.png",
+        "resource_uri": "/api/v1/country_employment/9/"
+      },
+      "created_at": "2016-11-22T15:31:57.095830",
+      "id": 25,
+      "manager": "Ахметов Нуратбек Айбекович",
+      "map_link": "",
+      "name": "ОсОО «Трудовая Азия»",
+      "phone_number": "0555 431977",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/25/",
+      "updated_at": "2016-11-22T15:31:57.095887"
+    },
+    {
+      "address": "Иссык-Кульская обл., Тюпский район, ул.Западная,20",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:32:41.634081",
+      "id": 26,
+      "manager": "Абдуллаев Максат Токтогулович",
+      "map_link": "",
+      "name": "ОсОО «World Travel»",
+      "phone_number": "0705 603077",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/26/",
+      "updated_at": "2016-11-22T15:32:41.634136"
+    },
+    {
+      "address": "Аламединский район, село Аламудун, ул.Пионерская,19",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:38:00.526637",
+      "id": 28,
+      "manager": "Кокулов Султан Байсалбекович",
+      "map_link": "",
+      "name": "ОсОО «Байсад»",
+      "phone_number": "0559 282862",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/28/",
+      "updated_at": "2016-11-22T15:38:00.526700"
+    },
+    {
+      "address": "ул.Тыныстанова, 173-1",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T15:38:00.527261",
+      "id": 29,
+      "manager": "Кадыракунов Адилет Кубанычбекович",
+      "map_link": "",
+      "name": "ОсОО «Инфо Групп»",
+      "phone_number": "0771 454515",
+      "phone_number_1": "0708 577717",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/29/",
+      "updated_at": "2016-11-22T15:38:00.527292"
+    },
+    {
+      "address": "ул. Северная, 88",
+      "country": {
+        "country": "Япония",
+        "id": 11,
+        "image": "/media/images/japan_ucuf2KF.png",
+        "resource_uri": "/api/v1/country_employment/11/"
+      },
+      "created_at": "2016-11-22T15:40:02.059323",
+      "id": 30,
+      "manager": "Самаров Айбек",
+      "map_link": "",
+      "name": "ОсОО «Джапан Стайл тренинг центр»",
+      "phone_number": "0778849805",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/30/",
+      "updated_at": "2016-11-22T15:40:02.059390"
+    },
+    {
+      "address": "пр. Мира, 56/9",
+      "country": {
+        "country": "Федеративная Республика Германия",
+        "id": 12,
+        "image": "/media/images/Germany.ico",
+        "resource_uri": "/api/v1/country_employment/12/"
+      },
+      "created_at": "2016-11-22T15:51:40.762510",
+      "id": 31,
+      "manager": "Шейшенов Нурдин",
+      "map_link": "",
+      "name": "ОсОО «ИнтерВоркЭксчейндж»",
+      "phone_number": "0552919155",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/31/",
+      "updated_at": "2016-11-22T15:51:40.762577"
+    },
+    {
+      "address": "Пр. Чуй, 130",
+      "country": {
+        "country": "Российская Федерация",
+        "id": 9,
+        "image": "/media/images/Russia.png",
+        "resource_uri": "/api/v1/country_employment/9/"
+      },
+      "created_at": "2016-11-22T15:58:42.157536",
+      "id": 32,
+      "manager": "Дуршеев А. М.",
+      "map_link": "",
+      "name": "ОсОО «Центр трудоустройства «Питер»",
+      "phone_number": "0550778161",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/32/",
+      "updated_at": "2016-11-22T15:58:42.157594"
+    },
+    {
+      "address": "..",
+      "country": {
+        "country": "Российская Федерация",
+        "id": 9,
+        "image": "/media/images/Russia.png",
+        "resource_uri": "/api/v1/country_employment/9/"
+      },
+      "created_at": "2016-11-22T15:58:42.158207",
+      "id": 33,
+      "manager": "Жумалиева Нурперизат Ишеналиевна",
+      "map_link": "",
+      "name": "ОсОО «Гринвич Консалт»",
+      "phone_number": "0559975501",
+      "phone_number_1": "0552311051",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/33/",
+      "updated_at": "2016-11-22T15:58:42.158238"
+    },
+    {
+      "address": "..",
+      "country": {
+        "country": "Российская Федерация",
+        "id": 9,
+        "image": "/media/images/Russia.png",
+        "resource_uri": "/api/v1/country_employment/9/"
+      },
+      "created_at": "2016-11-22T15:58:42.158629",
+      "id": 34,
+      "manager": "Минич Сергей Михайлович",
+      "map_link": "",
+      "name": "ОсОО «Жардам»",
+      "phone_number": "0556500188",
+      "phone_number_1": "0550 908220",
+      "phone_number_2": "0312 891780",
+      "resource_uri": "/api/v1/employment/34/",
+      "updated_at": "2016-11-22T15:58:42.158660"
+    },
+    {
+      "address": "ул. Раззакова, 32",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:17.632892",
+      "id": 35,
+      "manager": "Жакыпов Ж. С.",
+      "map_link": "",
+      "name": "ОсОО Динамик Бизнес Солюшенс»",
+      "phone_number": "0555277555",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/35/",
+      "updated_at": "2016-11-22T16:26:17.632946"
+    },
+    {
+      "address": "ул. Ш. Руставели, 46-141",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:17.633533",
+      "id": 36,
+      "manager": "Кубанычбекова Д.",
+      "map_link": "",
+      "name": "ОсОО «Эмплоймент центр»",
+      "phone_number": "0557565200",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/36/",
+      "updated_at": "2016-11-22T16:26:17.633564"
+    },
+    {
+      "address": "ул. Исанова,85-22",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:17.633969",
+      "id": 37,
+      "manager": "Бейшенбаев У.",
+      "map_link": "",
+      "name": "ОсОО «Азия Плюс Консалтинг»",
+      "phone_number": "0702299199",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/37/",
+      "updated_at": "2016-11-22T16:26:17.634000"
+    },
+    {
+      "address": "ж/м Ак-Ордо, ул. Ак-Доолот,7",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:17.634380",
+      "id": 38,
+      "manager": "Боркеева Т.С.",
+      "map_link": "",
+      "name": "ОсОО «Ак-Эмгек»",
+      "phone_number": "0708596666",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/38/",
+      "updated_at": "2016-11-22T16:26:17.634410"
+    },
+    {
+      "address": "Ул. Бейшеналиева 42 (Беш Сары Сити, 9 бутик)",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:17.634808",
+      "id": 39,
+      "manager": "Мурсалиева Мээрим Нуркулбековна",
+      "map_link": "",
+      "name": "ОсОО «Умида Ко»",
+      "phone_number": "0703228228",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/39/",
+      "updated_at": "2016-11-22T16:26:17.634838"
+    },
+    {
+      "address": "Ул. Киевская 200/Уметалиева",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:17.635232",
+      "id": 40,
+      "manager": "Жоомартов Э.",
+      "map_link": "",
+      "name": "ОсОО «Тэф интернэшнл»",
+      "phone_number": "0705003009",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/40/",
+      "updated_at": "2016-11-22T16:26:17.635262"
+    },
+    {
+      "address": "ул. Раззакова, 32",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:19.704602",
+      "id": 41,
+      "manager": "Жакыпов Ж. С.",
+      "map_link": "",
+      "name": "ОсОО Динамик Бизнес Солюшенс»",
+      "phone_number": "0555277555",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/41/",
+      "updated_at": "2016-11-22T16:26:19.704676"
+    },
+    {
+      "address": "ул. Ш. Руставели, 46-141",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:19.705224",
+      "id": 42,
+      "manager": "Кубанычбекова Д.",
+      "map_link": "",
+      "name": "ОсОО «Эмплоймент центр»",
+      "phone_number": "0557565200",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/42/",
+      "updated_at": "2016-11-22T16:26:19.705256"
+    },
+    {
+      "address": "ул. Исанова,85-22",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:19.705645",
+      "id": 43,
+      "manager": "Бейшенбаев У.",
+      "map_link": "",
+      "name": "ОсОО «Азия Плюс Консалтинг»",
+      "phone_number": "0702299199",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/43/",
+      "updated_at": "2016-11-22T16:26:19.705689"
+    },
+    {
+      "address": "ж/м Ак-Ордо, ул. Ак-Доолот,7",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:19.706085",
+      "id": 44,
+      "manager": "Боркеева Т.С.",
+      "map_link": "",
+      "name": "ОсОО «Ак-Эмгек»",
+      "phone_number": "0708596666",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/44/",
+      "updated_at": "2016-11-22T16:26:19.706116"
+    },
+    {
+      "address": "Ул. Бейшеналиева 42 (Беш Сары Сити, 9 бутик)",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:19.706498",
+      "id": 45,
+      "manager": "Мурсалиева Мээрим Нуркулбековна",
+      "map_link": "",
+      "name": "ОсОО «Умида Ко»",
+      "phone_number": "0703228228",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/45/",
+      "updated_at": "2016-11-22T16:26:19.706530"
+    },
+    {
+      "address": "Ул. Киевская 200/Уметалиева",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:19.706989",
+      "id": 46,
+      "manager": "Жоомартов Э.",
+      "map_link": "",
+      "name": "ОсОО «Тэф интернэшнл»",
+      "phone_number": "0705003009",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/46/",
+      "updated_at": "2016-11-22T16:26:19.707022"
+    },
+    {
+      "address": "ул. Раззакова, 32",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:20.181112",
+      "id": 47,
+      "manager": "Жакыпов Ж. С.",
+      "map_link": "",
+      "name": "ОсОО Динамик Бизнес Солюшенс»",
+      "phone_number": "0555277555",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/47/",
+      "updated_at": "2016-11-22T16:26:20.181171"
+    },
+    {
+      "address": "ул. Ш. Руставели, 46-141",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:20.181723",
+      "id": 48,
+      "manager": "Кубанычбекова Д.",
+      "map_link": "",
+      "name": "ОсОО «Эмплоймент центр»",
+      "phone_number": "0557565200",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/48/",
+      "updated_at": "2016-11-22T16:26:20.181755"
+    },
+    {
+      "address": "ул. Исанова,85-22",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:20.182149",
+      "id": 49,
+      "manager": "Бейшенбаев У.",
+      "map_link": "",
+      "name": "ОсОО «Азия Плюс Консалтинг»",
+      "phone_number": "0702299199",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/49/",
+      "updated_at": "2016-11-22T16:26:20.182185"
+    },
+    {
+      "address": "ж/м Ак-Ордо, ул. Ак-Доолот,7",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:20.182571",
+      "id": 50,
+      "manager": "Боркеева Т.С.",
+      "map_link": "",
+      "name": "ОсОО «Ак-Эмгек»",
+      "phone_number": "0708596666",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/50/",
+      "updated_at": "2016-11-22T16:26:20.182603"
+    },
+    {
+      "address": "Ул. Бейшеналиева 42 (Беш Сары Сити, 9 бутик)",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:20.183039",
+      "id": 51,
+      "manager": "Мурсалиева Мээрим Нуркулбековна",
+      "map_link": "",
+      "name": "ОсОО «Умида Ко»",
+      "phone_number": "0703228228",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/51/",
+      "updated_at": "2016-11-22T16:26:20.183070"
+    },
+    {
+      "address": "Ул. Киевская 200/Уметалиева",
+      "country": {
+        "country": "Турецкая Республика",
+        "id": 4,
+        "image": "/media/images/turkey_YuZL9rY.png",
+        "resource_uri": "/api/v1/country_employment/4/"
+      },
+      "created_at": "2016-11-22T16:26:20.183472",
+      "id": 52,
+      "manager": "Жоомартов Э.",
+      "map_link": "",
+      "name": "ОсОО «Тэф интернэшнл»",
+      "phone_number": "0705003009",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/52/",
+      "updated_at": "2016-11-22T16:26:20.183503"
+    },
+    {
+      "address": "ул.Турусбекова, 88/1, каб. 308",
+      "country": {
+        "country": "Объединенные Арабские Эмираты",
+        "id": 14,
+        "image": "/media/images/United-Arab-Emirates.png",
+        "resource_uri": "/api/v1/country_employment/14/"
+      },
+      "created_at": "2017-02-10T14:55:55.876574",
+      "id": 54,
+      "manager": "Мырзабекова Гульнара Кенешбековна",
+      "map_link": "",
+      "name": "ОсОО «Arabian Center Employment Services»",
+      "phone_number": "0551751182",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/54/",
+      "updated_at": "2017-02-10T14:55:55.876630"
+    },
+    {
+      "address": "г.Ош, ул.Курманжан Датка 111/6",
+      "country": {
+        "country": "Объединенные Арабские Эмираты",
+        "id": 14,
+        "image": "/media/images/United-Arab-Emirates.png",
+        "resource_uri": "/api/v1/country_employment/14/"
+      },
+      "created_at": "2017-02-10T14:58:20.106122",
+      "id": 55,
+      "manager": "Аматова Айгерим Талайбековна",
+      "map_link": "",
+      "name": "ОсОО  Зайн-КейДжи",
+      "phone_number": "0 3222 49548",
+      "phone_number_1": "0552961010",
+      "phone_number_2": "0776861010",
+      "resource_uri": "/api/v1/employment/55/",
+      "updated_at": "2017-02-10T14:58:20.106213"
+    },
+    {
+      "address": "г.Бишкек\r\nул. Турусбекова, 88/1, 308 каб.",
+      "country": {
+        "country": "Объединенные Арабские Эмираты",
+        "id": 14,
+        "image": "/media/images/United-Arab-Emirates.png",
+        "resource_uri": "/api/v1/country_employment/14/"
+      },
+      "created_at": "2017-02-10T14:59:19.815179",
+      "id": 56,
+      "manager": "Баякматов Анвар Нурович",
+      "map_link": "",
+      "name": "ОсОО «Агентство по трудоустройству в Центральной Азии»",
+      "phone_number": "612031",
+      "phone_number_1": "0770751188",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/56/",
+      "updated_at": "2017-02-10T14:59:19.815240"
+    },
+    {
+      "address": "пр. Чуй, 265, каб. 4",
+      "country": {
+        "country": "Объединенные Арабские Эмираты",
+        "id": 14,
+        "image": "/media/images/United-Arab-Emirates.png",
+        "resource_uri": "/api/v1/country_employment/14/"
+      },
+      "created_at": "2017-02-10T15:00:08.827987",
+      "id": 57,
+      "manager": "Боколоев Азат",
+      "map_link": "",
+      "name": "ОсОО «SunRise»",
+      "phone_number": "0555021509",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/57/",
+      "updated_at": "2017-02-10T15:00:08.828040"
+    },
+    {
+      "address": "ул. Ш. Руставели, 46-141",
+      "country": {
+        "country": "Объединенные Арабские Эмираты",
+        "id": 14,
+        "image": "/media/images/United-Arab-Emirates.png",
+        "resource_uri": "/api/v1/country_employment/14/"
+      },
+      "created_at": "2017-02-10T15:01:08.572106",
+      "id": 58,
+      "manager": "Кубанычбекова Д.",
+      "map_link": "",
+      "name": "ОсОО «Эмплоймент центр»",
+      "phone_number": "0557565200",
+      "phone_number_1": "",
+      "phone_number_2": "",
+      "resource_uri": "/api/v1/employment/58/",
+      "updated_at": "2017-02-10T15:01:08.572162"
+    }
+  ]
+}

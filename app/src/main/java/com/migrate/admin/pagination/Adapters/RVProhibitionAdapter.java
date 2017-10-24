@@ -103,7 +103,8 @@ public class RVProhibitionAdapter extends RecyclerView.Adapter {
             RulesOfIncoming singleStudent = (RulesOfIncoming) studentList.get(position);
 
             ((StudentViewHolder) holder).tvName.setText(singleStudent.getTitle());
-            Picasso.with(context).load(singleStudent.getImage()).into(((StudentViewHolder) holder).imageView);
+           // Picasso.with(context).load(singleStudent.getImage()).into(((StudentViewHolder) holder).imageView);
+            Picasso.with(context).load(Integer.parseInt(singleStudent.getImage())).into(((StudentViewHolder) holder).imageView);
             ((StudentViewHolder) holder).student = singleStudent;
 
         } else {
